@@ -15,8 +15,8 @@
   </head>
   <body class="bg-white text-gray-800"> <!-- Sets background and text color -->
     <!-- Header -->
-    <header class="bg-gray-100 shadow p-6 sticky top-0 z-50"> <!-- Sticky header with shadow -->
-      <div class="w-full flex justify-between items-center px-4"> <!-- Full-width header content -->
+    <header class="bg-gray-100 shadow p-4 sticky top-0 z-50"> <!-- Sticky header with shadow -->
+      <div class="w-full flex justify-between items-center px-2"> <!-- Full-width header content -->
         <h1 class="text-2xl font-bold">Ethan Ashley</h1> <!-- Site title -->
         <nav class="space-x-6 text-sm"> <!-- Navigation links -->
           <a href="#about" class="hover:text-blue-600">About</a>
@@ -28,9 +28,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative text-center py-32 bg-gradient-to-r from-blue-50 to-blue-100 px-4"> <!-- Intro section with gradient background -->
+    <section class="relative text-center py-32 bg-gradient-to-r from-blue-50 to-blue-100 px-2"> <!-- Intro section with gradient background -->
       <div class="absolute inset-0 w-full h-full opacity-20 z-0 overflow-hidden"> <!-- Background image wrapper -->
-        <img src="GradPhoto.jpg" class="w-full h-full object-cover object-top" /> <!-- Full-size background image aligned to top -->
+        <img src="GradPhoto.jpg" alt="Ethan Ashley" class="w-full h-full object-cover object-top" /> <!-- Full-size background image aligned to top -->
       </div>
       <div class="relative z-10"> <!-- Foreground content -->
         <h2 class="text-4xl font-bold mb-4">Hi, I'm Ethan Ashley</h2> <!-- Main greeting -->
@@ -39,7 +39,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="w-full px-6 py-16"> <!-- Full-width About me section -->
+    <section id="about" class="w-full px-2 py-16"> <!-- Full-width About me section -->
       <h3 class="text-2xl font-bold mb-4">About Me</h3>
       <p class="text-gray-700 leading-relaxed">
         I'm a recent Mechanical Engineering graduate from Auburn University with a passion for CAD design, mechatronics, and hands-on problem solving. I enjoy working on team-based projects and always strive to bring creativity and precision to everything I build.
@@ -47,16 +47,16 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="w-full bg-gray-50 py-16 px-4"> <!-- Full-width Project showcase -->
+    <section id="projects" class="w-full bg-gray-50 py-16 px-2"> <!-- Full-width Project showcase -->
       <div class="w-full"> <!-- Full-width wrapper -->
         <h3 class="text-2xl font-bold mb-8 text-center">Projects</h3>
         <div class="grid md:grid-cols-2 gap-8"> <!-- Responsive 2-column layout -->
-          <div class="bg-white rounded-2xl shadow p-6"> <!-- Project card -->
+          <div class="bg-white rounded-2xl shadow p-4"> <!-- Project card -->
             <h4 class="font-semibold text-lg mb-2">Robotic Arm CAD Model</h4>
             <p class="text-gray-700 mb-2">Designed a 5-DOF robotic arm using SolidWorks and simulated motion paths with accurate kinematics.</p>
             <a href="#" class="text-blue-600 text-sm">View more →</a>
           </div>
-          <div class="bg-white rounded-2xl shadow p-6"> <!-- Another project card -->
+          <div class="bg-white rounded-2xl shadow p-4"> <!-- Another project card -->
             <h4 class="font-semibold text-lg mb-2">Autonomous Line-Follower Robot</h4>
             <p class="text-gray-700 mb-2">Programmed an Arduino-powered robot using PID control for optimized path-following performance.</p>
             <a href="#" class="text-blue-600 text-sm">View more →</a>
@@ -66,14 +66,14 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="w-full px-6 py-16"> <!-- Full-width Resume download section -->
+    <section id="resume" class="w-full px-2 py-16"> <!-- Full-width Resume download section -->
       <h3 class="text-2xl font-bold mb-4">Resume</h3>
       <p class="mb-4">Download my resume or view it online below:</p>
       <a href="resume.pdf" target="_blank" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg">Download PDF</a>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="w-full bg-blue-50 py-16 px-4"> <!-- Full-width Contact section -->
+    <section id="contact" class="w-full bg-blue-50 py-16 px-2"> <!-- Full-width Contact section -->
       <div class="w-full text-center"> <!-- Full-width wrapper -->
         <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
         <p class="mb-4">I'm currently open to full-time opportunities or collaborations. Let's connect!</p>
@@ -83,7 +83,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 py-6 px-4"> <!-- Footer text -->
+    <footer class="text-center text-sm text-gray-500 py-6 px-2"> <!-- Footer text -->
       © 2025 Ethan Ashley. All rights reserved.
     </footer>
   </body>
