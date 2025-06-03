@@ -30,7 +30,7 @@
     <!-- Hero Section -->
     <section class="relative text-center py-32 bg-gradient-to-r from-blue-50 to-blue-100 px-4"> <!-- Intro section with gradient background -->
       <div class="absolute inset-0 w-full h-full opacity-20 z-0"> <!-- Background image wrapper -->
-        <img src="GradPic.jpg" alt="Your Name" class="w-full h-full object-cover" /> <!-- Full-size background image -->
+        <img src="GradPic.jpg" alt="Your Name" class="w-full h-full object-cover object-top" /> <!-- Full-size background image -->
       </div>
       <div class="relative z-10"> <!-- Foreground content -->
         <h2 class="text-4xl font-bold mb-4">Hi, I'm Ethan Ashley</h2> <!-- Main greeting -->
