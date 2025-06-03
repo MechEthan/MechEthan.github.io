@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" /> <!-- Character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes the site responsive -->
-    <title>Your Name | Mechanical Engineer</title> <!-- Title shown in browser tab -->
+    <title>Ethan Ashley | Mechanical Engineer</title> <!-- Title shown in browser tab -->
     <script src="https://cdn.tailwindcss.com"></script> <!-- Loads Tailwind CSS framework -->
     <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Improves font loading -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" /> <!-- Loads Inter font -->
@@ -17,7 +17,7 @@
     <!-- Header -->
     <header class="bg-gray-100 shadow p-6 sticky top-0 z-50"> <!-- Sticky header with shadow -->
       <div class="max-w-screen-xl mx-auto flex justify-between items-center px-4"> <!-- Centers and spaces header content -->
-        <h1 class="text-2xl font-bold">Your Name</h1> <!-- Site title -->
+        <h1 class="text-2xl font-bold">Ethan Ashley</h1> <!-- Site title -->
         <nav class="space-x-6 text-sm"> <!-- Navigation links -->
           <a href="#about" class="hover:text-blue-600">About</a>
           <a href="#projects" class="hover:text-blue-600">Projects</a>
@@ -30,11 +30,11 @@
     <!-- Hero Section -->
     <section class="relative text-center py-32 bg-gradient-to-r from-blue-50 to-blue-100 px-4"> <!-- Intro section with gradient background -->
       <div class="absolute inset-0 flex justify-center items-center opacity-20 z-0"> <!-- Background image wrapper -->
-        <img src="GradPic![GradPic](https://github.com/user-attachments/assets/8b579c4a-c12d-40ab-8dd2-6bd3c73f93d4)
-.jpg" alt="Your Name" class="w-60 h-60 rounded-full object-cover" /> <!-- Profile photo as background -->
+        ![GradPic](https://github.com/user-attachments/assets/ff0d06ae-463f-4b90-a924-495f55cbf46d)
+        <img src="GradPic.jpg" alt="Ethan Ashley" class="w-60 h-60 rounded-full object-cover" /> <!-- Profile photo as background -->
       </div>
       <div class="relative z-10"> <!-- Foreground content -->
-        <h2 class="text-4xl font-bold mb-4">Hi, I'm Ethan Ashley</h2> <!-- Main greeting -->
+        <h2 class="text-4xl font-bold mb-4">Hi, I'm Your Name</h2> <!-- Main greeting -->
         <p class="text-lg mb-6">Mechanical Engineering Student | CAD Enthusiast | Problem Solver</p> <!-- Tagline -->
       </div>
     </section>
