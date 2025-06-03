@@ -16,7 +16,7 @@
   <body class="bg-white text-gray-800">
     <!-- Header -->
     <header class="bg-gray-100 shadow p-6 sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="max-w-screen-xl mx-auto flex justify-between items-center px-4">
         <h1 class="text-2xl font-bold">Your Name</h1>
         <nav class="space-x-6 text-sm">
           <a href="#about" class="hover:text-blue-600">About</a>
@@ -28,13 +28,13 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="text-center py-20 bg-gradient-to-r from-blue-50 to-blue-100">
+    <section class="text-center py-20 bg-gradient-to-r from-blue-50 to-blue-100 px-4">
       <h2 class="text-4xl font-bold mb-4">Hi, I'm Your Name</h2>
       <p class="text-lg">Mechanical Engineering Student | CAD Enthusiast | Problem Solver</p>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="max-w-4xl mx-auto px-4 py-16">
+    <section id="about" class="max-w-screen-md mx-auto px-6 py-16">
       <h3 class="text-2xl font-bold mb-4">About Me</h3>
       <p class="text-gray-700 leading-relaxed">
         I'm a recent Mechanical Engineering graduate from Auburn University with a passion for CAD design, mechatronics, and hands-on problem solving. I enjoy working on team-based projects and always strive to bring creativity and precision to everything I build.
@@ -43,7 +43,7 @@
 
     <!-- Projects Section -->
     <section id="projects" class="bg-gray-50 py-16 px-4">
-      <div class="max-w-6xl mx-auto">
+      <div class="max-w-screen-lg mx-auto">
         <h3 class="text-2xl font-bold mb-8 text-center">Projects</h3>
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-white rounded-2xl shadow p-6">
@@ -61,7 +61,7 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="max-w-4xl mx-auto px-4 py-16">
+    <section id="resume" class="max-w-screen-md mx-auto px-6 py-16">
       <h3 class="text-2xl font-bold mb-4">Resume</h3>
       <p class="mb-4">Download my resume or view it online below:</p>
       <a href="resume.pdf" target="_blank" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg">Download PDF</a>
@@ -69,7 +69,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="bg-blue-50 py-16 px-4">
-      <div class="max-w-3xl mx-auto text-center">
+      <div class="max-w-screen-md mx-auto text-center">
         <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
         <p class="mb-4">I'm currently open to full-time opportunities or collaborations. Let's connect!</p>
         <p>Email: <a href="mailto:your.email@example.com" class="text-blue-600">your.email@example.com</a></p>
@@ -78,9 +78,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 py-6">
+    <footer class="text-center text-sm text-gray-500 py-6 px-4">
       © 2025 Your Name. All rights reserved.
     </footer>
   </body>
 </html>
-
