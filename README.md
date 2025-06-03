@@ -29,7 +29,7 @@
 
     <!-- Hero Section -->
     <section class="text-center py-20 bg-gradient-to-r from-blue-50 to-blue-100 px-4">
-      <h2 class="text-4xl font-bold mb-4">Hi, I'm Your Name</h2>
+      <h2 class="text-4xl font-bold mb-4">Hi, I'm Ethan Ashley</h2>
       <p class="text-lg">Mechanical Engineering Student | CAD Enthusiast | Problem Solver</p>
     </section>
 
