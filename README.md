@@ -29,9 +29,8 @@
 
     <!-- Hero Section -->
     <section class="relative text-center py-32 bg-gradient-to-r from-blue-50 to-blue-100 px-4"> <!-- Intro section with gradient background -->
-      <div class="absolute inset-0 flex justify-center items-center opacity-20 z-0"> <!-- Background image wrapper -->
-        ![GradPic](https://github.com/user-attachments/assets/ff0d06ae-463f-4b90-a924-495f55cbf46d)
-        <img src="GradPic.jpg" alt="Ethan Ashley" class="w-60 h-60 rounded-full object-cover" /> <!-- Profile photo as background -->
+      <div class="absolute inset-0 w-full h-full opacity-20 z-0"> <!-- Background image wrapper -->
+        <img src="your-photo.jpg" alt="Your Name" class="w-full h-full object-cover" /> <!-- Full-size background image -->
       </div>
       <div class="relative z-10"> <!-- Foreground content -->
         <h2 class="text-4xl font-bold mb-4">Hi, I'm Your Name</h2> <!-- Main greeting -->
