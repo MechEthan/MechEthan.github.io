@@ -1,15 +1,25 @@
-<!DOCTYPE html> <!-- Defines this document as an HTML5 document -->
-<html lang="en"> <!-- Sets the language of the document to English -->
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" /> <!-- Character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes the site responsive -->
-    <title>Ethan Ashley | Mechanical Engineer</title> <!-- Title shown in browser tab -->
-    <script src="https://cdn.tailwindcss.com"></script> <!-- Loads Tailwind CSS framework -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Improves font loading -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" /> <!-- Loads Inter font -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan Ashley | Mechanical Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <style>
       body {
-        font-family: 'Inter', sans-serif; /* Sets default font to Inter */
+        font-family: 'Inter', sans-serif;
+      }
+      .group:hover .group-hover\:blur-sm:not(:hover) {
+        filter: blur(4px);
+        transform: scale(0.98);
+        opacity: 0.7;
+      }
+      .group:hover a:hover {
+        z-index: 10;
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
       }
     </style>
   </head>
@@ -50,159 +60,27 @@
     <section id="projects" class="w-full bg-gray-50 py-16 px-2">
       <div class="w-full">
         <h3 class="text-2xl font-bold mb-8 text-center">Course Projects</h3>
-        <div class="grid md:grid-cols-3 gap-8">
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Solar Water Heater</h4>
+        <div class="group grid md:grid-cols-3 gap-8">
+          <!-- First Animated Card -->
+          <a href="#" class="group relative block transition-all duration-300 group-hover:blur-sm hover:!blur-none">
+            <div class="absolute inset-0 rounded-lg overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0">
+              <img src="solar-project.jpg" alt="Solar Project Image" class="w-full h-full object-cover" />
+            </div>
+            <div class="relative z-10 bg-white shadow-md p-6 rounded-lg h-full group-hover:bg-opacity-90 transition-all duration-300">
+              <h4 class="text-xl font-semibold mb-1">Solar Water Heater</h4>
+              <h5 class="text-sm font-medium text-gray-500 mb-2">Thermodynamics & Energy Systems</h5>
               <p class="text-gray-700">Designed and tested a solar water heating system to improve energy efficiency for residential use. Focus on thermodynamics and fluid flow.</p>
             </div>
           </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">CAD Model Rocket</h4>
-              <p class="text-gray-700">Developed a 3D model and performed FEA simulations to analyze stress points during rocket launch. Used SolidWorks and ANSYS.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Automated Plant Watering System</h4>
-              <p class="text-gray-700">Built a microcontroller-based system using Arduino to automatically water plants based on soil moisture levels.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Wind Turbine Blade Analysis</h4>
-              <p class="text-gray-700">Analyzed aerodynamic properties of various blade shapes to determine optimal energy conversion efficiency using MATLAB.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">3D Printed Orrery</h4>
-              <p class="text-gray-700">Designed and fabricated an orrery to demonstrate planetary motion using gears and a 3D printer. Programmed motion using Arduino.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Vibration Damping Experiment</h4>
-              <p class="text-gray-700">Created a test rig to study material vibration characteristics and implemented passive damping solutions.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Kinematic Linkage Mechanism</h4>
-              <p class="text-gray-700">Designed a four-bar linkage system and simulated motion paths for mechanical advantage testing.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Systems Dynamics Simulation</h4>
-              <p class="text-gray-700">Modeled dynamic systems using Simulink for mechanical response and stability analysis.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Heat Exchanger Design</h4>
-              <p class="text-gray-700">Designed and evaluated performance of a compact heat exchanger for HVAC applications using thermodynamic principles.</p>
-            </div>
-          </a>
-          <!-- Extra centered card -->
-          <div class="md:col-span-3 flex justify-center">
-            <a href="#" class="block transform hover:scale-105 transition w-full md:w-1/3">
-              <div class="bg-white shadow-md p-6 rounded-lg h-full">
-                <h4 class="text-xl font-semibold mb-2">Capstone Mechatronics Project</h4>
-                <p class="text-gray-700">Led a team to design a robotic arm capable of object sorting using sensors and servo control. Integrated mechanical and electrical systems.</p>
-              </div>
-            </a>
-          </div>
-        </div>
 
-        <!-- Additional project sections -->
-        <h3 class="text-2xl font-bold mt-16 mb-8 text-center">Personal Projects</h3>
-        <div class="grid md:grid-cols-3 gap-8">
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Custom PC Build</h4>
-              <p class="text-gray-700">Researched and assembled a high-performance PC for CAD and simulation tasks with a focus on airflow and thermal management.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Bluetooth Speaker Build</h4>
-              <p class="text-gray-700">Designed and built a wooden enclosure and internal circuitry for a Bluetooth speaker using recycled components.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Raspberry Pi Weather Station</h4>
-              <p class="text-gray-700">Used Raspberry Pi and sensors to collect and display local weather data via a web interface.</p>
-            </div>
-          </a>
-        </div>
-
-        <h3 class="text-2xl font-bold mt-16 mb-8 text-center">Design Challenges</h3>
-        <div class="grid md:grid-cols-3 gap-8">
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">3D Print Bridge Contest</h4>
-              <p class="text-gray-700">Engineered a lightweight bridge using PLA that withstood 50x its own weight in a strength challenge.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">Pump Design Hackathon</h4>
-              <p class="text-gray-700">Collaborated on designing an efficient water pump prototype using limited parts under a 48-hour deadline.</p>
-            </div>
-          </a>
-          <a href="#" class="block transform hover:scale-105 transition">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h4 class="text-xl font-semibold mb-2">CAD Speed Modeling Contest</h4>
-              <p class="text-gray-700">Competed in a time-based SolidWorks challenge to model mechanical parts accurately under pressure.</p>
-            </div>
-          </a>
+          <!-- Additional cards go here... (copy the structure above and change title, subheading, description, and image) -->
         </div>
       </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="w-full px-2 py-16">
-      <h3 class="text-2xl font-bold mb-4">Resume</h3>
-      <p class="mb-4">Download my resume or view it online below:</p>
-      <a href="resume.pdf" target="_blank" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg">Download PDF</a>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="w-full bg-blue-50 py-16 px-2">
-      <div class="w-full text-center">
-        <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
-        <p class="mb-4">I'm currently open to full-time opportunities or collaborations. Let's connect!</p>
-        <p>Email: <a href="mailto:eta9303@gmail.com" class="text-blue-600">eta9303@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ethan-ashley-wdeng" class="text-blue-600">linkedin.com/in/ethan-ashley-wdeng</a></p>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 py-6 px-2">
-      © 2025 Ethan Ashley. All rights reserved.
+    <!-- Footer Placeholder -->
+    <footer id="contact" class="w-full bg-gray-100 text-center py-8 mt-16">
+      <p class="text-sm text-gray-500">© 2025 Ethan Ashley</p>
     </footer>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white px-3 py-2 rounded-full shadow-lg hidden">↑ Top</button>
-
-    <script>
-      // Show button on scroll
-      const backToTop = document.getElementById('backToTop');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          backToTop.classList.remove('hidden');
-        } else {
-          backToTop.classList.add('hidden');
-        }
-      });
-
-      // Scroll to top on click
-      backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    </script>
   </body>
 </html>
