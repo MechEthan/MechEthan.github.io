@@ -13,22 +13,22 @@
       }
     </style>
   </head>
-  <body class="bg-white text-gray-800">
-    <header class="bg-gray-100 shadow p-4 sticky top-0 z-50">
-      <div class="w-full flex justify-between items-center px-2">
-        <h1 class="text-2xl font-bold">Ethan Ashley</h1>
-        <nav class="space-x-6 text-sm">
-          <a href="#about" class="hover:text-blue-600">About</a>
-          <a href="#projects" class="hover:text-blue-600">Projects</a>
-          <a href="#resume" class="hover:text-blue-600">Resume</a>
-          <a href="#contact" class="hover:text-blue-600">Contact</a>
-        </nav>
-      </div>
-      <link rel="icon" href="/images/SmOut.png" type="image/png" />
-    </header>
+  <body class="bg-white text-gray-800 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-gray-100 shadow p-4 sticky top-0 z-50">
+    <div class="w-full flex justify-between items-center px-2">
+      <a href="index.html" class="text-2xl font-bold hover:text-blue-600">Ethan Ashley</a>
+      <nav class="space-x-6 text-sm">
+        <a href="About.html" class="hover:text-blue-600">About</a>
+        <a href="Projects.html" class="hover:text-blue-600">Projects</a>
+        <a href="Resume.html" class="hover:text-blue-600">Resume</a>
+        <a href="Contact.html" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Main Content -->
-  <main class="max-w-full mx-auto p-8">
+  <main class="flex-grow">
     <h2 class="text-3xl font-bold mb-4">Autonomous Indy Car Steering Control</h2>
     <p class="mb-6 text-gray-700">One of the most challenging projects of my undergraduate degree. Created a dynamic model of inputs and outputs then developed a controller to steer the 
       Indy Car around Indianapolis Motor Speedway with a settle time under 0.6 seconds and a max percent overshoot of 5%. Our final reselts were imperfect but was partial caused by an error in 
@@ -80,5 +80,11 @@
     <a href="../index.html#projects" class="text-blue-600 hover:underline">← Back to all projects</a>
   </main>
 
+<footer class="bg-gray-100 text-center p-4 text-sm text-gray-600">
+  © 2025 Ethan Ashley. All rights reserved. |
+  <a href="mailto:ethanashley@example.com" class="text-blue-600 hover:underline">ethanashley@example.com</a>
+</footer>
+
+    
 </body>
 </html>
