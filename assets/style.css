@@ -1,0 +1,550 @@
+/* ==========================================================================
+   Ethan Ashley — Portfolio
+   Design system: "Blueprint" — drafting paper, ink, and redline annotations.
+   ========================================================================== */
+
+:root {
+  --ink: #16232e;
+  --ink-muted: #3e4c57;
+  --muted: #5b6b75;
+  --paper: #eef1ec;
+  --panel: #e3e8e2;
+  --navy: #0e2a47;
+  --navy-2: #123b61;
+  --line: #2e7da8;
+  --line-soft: rgba(46, 125, 168, 0.35);
+  --accent: #d64526;
+  --accent-dark: #b23a1f;
+  --cream-line: rgba(234, 244, 250, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(rgba(46, 125, 168, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46, 125, 168, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------
+   Header / navigation
+   -------------------------------------------------------------------- */
+
+.site-header {
+  background-color: var(--navy);
+  border-bottom: 1px solid rgba(234, 244, 250, 0.15);
+  position: relative;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--accent) 0 10px,
+    transparent 10px 20px
+  );
+  opacity: 0.55;
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--cream-line);
+  text-decoration: none;
+}
+
+.brand-mark svg {
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+  color: #f4f7f5;
+}
+
+.brand-name span {
+  color: var(--accent);
+}
+
+.nav-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(234, 244, 250, 0.75);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  color: #ffffff;
+  border-bottom-color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(234, 244, 250, 0.4);
+  color: #eaf4fa;
+  width: 38px;
+  height: 34px;
+  border-radius: 2px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    border-bottom: 1px solid rgba(234, 244, 250, 0.15);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+  .nav-links.open {
+    max-height: 320px;
+  }
+  .nav-links .nav-link {
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+    border-bottom: 1px solid rgba(234, 244, 250, 0.08);
+  }
+  .nav-toggle {
+    display: inline-flex;
+  }
+}
+
+/* --------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------- */
+
+.hero-blueprint {
+  background-color: var(--navy);
+  background-image:
+    linear-gradient(rgba(234, 244, 250, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(234, 244, 250, 0.09) 1px, transparent 1px);
+  background-size: 40px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-blueprint::before,
+.hero-blueprint::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(234, 244, 250, 0.4);
+  opacity: 0.6;
+}
+
+.hero-blueprint::before {
+  top: 18px;
+  left: 18px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.hero-blueprint::after {
+  bottom: 18px;
+  right: 18px;
+  border-left: none;
+  border-top: none;
+}
+
+.figure-frame {
+  position: relative;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 0 6px rgba(46, 125, 168, 0.08);
+}
+
+.figure-frame::before,
+.figure-frame::after,
+.figure-frame .corner-tl,
+.figure-frame .corner-br {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-color: var(--accent);
+  border-style: solid;
+}
+
+.figure-frame::before {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+
+.figure-frame::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 2px 2px 0;
+}
+
+.figure-caption {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(234, 244, 250, 0.7);
+}
+
+.figure-caption strong {
+  color: #eaf4fa;
+}
+
+/* --------------------------------------------------------------------
+   Section furniture
+   -------------------------------------------------------------------- */
+
+.section-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.section-eyebrow::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.dim-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--line);
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.dim-divider .dim-line {
+  flex: 1;
+  height: 0;
+  border-top: 1px dashed var(--line-soft);
+  position: relative;
+}
+
+.dim-divider .dim-line::before,
+.dim-divider .dim-line::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  width: 1px;
+  height: 9px;
+  background: var(--line-soft);
+}
+
+.dim-divider .dim-line::before {
+  left: 0;
+}
+
+.dim-divider .dim-line::after {
+  right: 0;
+}
+
+.dim-divider .dim-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------
+   Cards
+   -------------------------------------------------------------------- */
+
+.card-blueprint {
+  position: relative;
+  background: #f8faf7;
+  border: 1px solid rgba(46, 125, 168, 0.25);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-blueprint:hover {
+  transform: translateY(-3px);
+  border-color: var(--line);
+  box-shadow: 0 10px 24px -12px rgba(14, 42, 71, 0.35);
+}
+
+.card-blueprint::before,
+.card-blueprint::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--accent);
+  border-style: solid;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.card-blueprint::before {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+
+.card-blueprint::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 2px 2px 0;
+}
+
+.card-blueprint:hover::before,
+.card-blueprint:hover::after {
+  opacity: 1;
+}
+
+.card-index {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.tool-card {
+  background: var(--panel);
+  border: 1px solid rgba(46, 125, 168, 0.18);
+}
+
+/* --------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------- */
+
+.btn-blueprint {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.3rem;
+  border: 1px solid var(--accent);
+  color: var(--accent-dark);
+  background: transparent;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-blueprint:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-blueprint-solid {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.3rem;
+  border: 1px solid var(--accent);
+  color: #fff;
+  background: var(--accent);
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-blueprint-solid:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.link-inline {
+  color: var(--line);
+  text-decoration: underline;
+  text-decoration-color: rgba(46, 125, 168, 0.4);
+  text-underline-offset: 3px;
+}
+
+.link-inline:hover {
+  color: var(--accent-dark);
+  text-decoration-color: var(--accent);
+}
+
+.back-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--line);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.back-link:hover {
+  color: var(--accent-dark);
+}
+
+/* --------------------------------------------------------------------
+   Sheet label (project pages)
+   -------------------------------------------------------------------- */
+
+.sheet-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--line);
+  border: 1px solid rgba(46, 125, 168, 0.35);
+  padding: 0.3rem 0.6rem;
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------
+   Title block footer (signature element)
+   -------------------------------------------------------------------- */
+
+.title-block {
+  background: var(--navy);
+  border-top: 3px double rgba(234, 244, 250, 0.3);
+  color: rgba(234, 244, 250, 0.85);
+}
+
+.title-block-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgba(234, 244, 250, 0.25);
+}
+
+.title-block-cell {
+  border-right: 1px solid rgba(234, 244, 250, 0.25);
+  padding: 0.65rem 0.9rem;
+}
+
+.title-block-cell:last-child {
+  border-right: none;
+}
+
+.title-block-cell .tb-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(234, 244, 250, 0.55);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.title-block-cell .tb-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  color: #f4f7f5;
+}
+
+@media (max-width: 720px) {
+  .title-block-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .title-block-cell:nth-child(2) {
+    border-right: none;
+  }
+  .title-block-cell:nth-child(1),
+  .title-block-cell:nth-child(2) {
+    border-bottom: 1px solid rgba(234, 244, 250, 0.25);
+  }
+}
+
+/* --------------------------------------------------------------------
+   Back to top
+   -------------------------------------------------------------------- */
+
+#backToTop {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--navy);
+  color: #eaf4fa;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#backToTop:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}

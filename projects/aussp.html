@@ -1,85 +1,140 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ethan Ashley | Mechanical Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ethan Ashley | Mechanical Engineer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#16232E',
+            inkmuted: '#3E4C57',
+            paper: '#EEF1EC',
+            panel: '#E3E8E2',
+            navy: '#0E2A47',
+            navy2: '#123B61',
+            line: '#2E7DA8',
+            accent: '#D64526',
+            accentdark: '#B23A1F',
+            muted: '#5B6B75',
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+        }
       }
-    </style>
-  </head>
- <body class="bg-white text-gray-800 min-h-screen flex flex-col">
-  <!-- Header -->
-  <header class="bg-gray-100 shadow p-4 sticky top-0 z-50">
-    <div class="w-full flex justify-between items-center px-2">
-      <a href="index.html" class="text-2xl font-bold hover:text-blue-600">Ethan Ashley</a>
-      <nav class="space-x-6 text-sm">
-  <a href="/About.html" class="hover:text-blue-600">About</a>
-  <a href="/Projects.html" class="hover:text-blue-600">Projects</a>
-  <a href="/Resume.html" class="hover:text-blue-600">Resume</a>
-  <a href="/Contact.html" class="hover:text-blue-600">Contact</a>
+    }
+  </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<link href="/images/SmOut.png" rel="icon" type="image/png"/>
+</head>
+<body class="text-ink min-h-screen flex flex-col">
+<!-- Header -->
+<header class="site-header sticky top-0 z-50">
+<div class="max-w-6xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 relative">
+<a class="brand-mark" href="/index.html">
+<svg fill="none" height="26" viewbox="0 0 26 26" width="26" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="13" r="10.5" stroke="#EAF4FA" stroke-width="1"></circle>
+<path d="M13 2.5V6.5M13 19.5V23.5M2.5 13H6.5M19.5 13H23.5" stroke="#D64526" stroke-width="1.4"></path>
+<circle cx="13" cy="13" r="2.6" stroke="#EAF4FA" stroke-width="1"></circle>
+</svg>
+<span class="brand-name">Ethan <span>Ashley</span></span>
+</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<svg fill="none" height="14" viewbox="0 0 18 14" width="18"><path d="M0 1H18M0 7H18M0 13H18" stroke="#EAF4FA" stroke-width="1.4"></path></svg>
+</button>
+<nav class="nav-links" id="navLinks">
+<a class="nav-link" href="/About.html">About</a>
+<a aria-current="page" class="nav-link" href="/Projects.html">Projects</a>
+<a class="nav-link" href="/Resume.html">Resume</a>
+<a class="nav-link" href="/Contact.html">Contact</a>
 </nav>
-
-    </div>
-  </header>
-  <!-- Main Content -->
-  <main class="flex-grow p-8">
-<h2 class="text-3xl font-bold mb-4">Training Program</h2>
-
- <div class="flex flex-col md:flex-row items-start gap-6 my-12 max-w-full mx-auto">
-  <!-- Project Description (3/4 width) -->
-  <div class="w-full md:w-3/4">
-    <p class="text-gray-700 mb-4">
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow mx-auto p-8 max-w-5xl"><div class="mb-6 flex items-center gap-3"><span class="sheet-label">DWG X-02</span><a class="back-link" href="/Projects.html">← All projects</a></div>
+<h2 class="text-3xl sm:text-4xl font-semibold font-display mb-4 text-ink font-bold">Training Program</h2>
+<div class="flex flex-col md:flex-row items-start gap-6 my-12 max-w-full mx-auto">
+<!-- Project Description (3/4 width) -->
+<div class="w-full md:w-3/4">
+<p class="text-inkmuted mb-4">
       The Auburn University Small Satellite Program (AUSSP) works on government/military sponsored projects through the building of cube satellites.
       I joined AUSSP and completed their training program which consisted of a small team designing, building, and coding sensors and a small model rocket. Unfortunatley much of their work 
       is for long term projects and there was some difficulty finding a position for me and most of my training team.
     </p>
-  </div>
-
-  <!-- Image (1/4 width) -->
-  <div class="w-full md:w-1/4 flex justify-center">
-    <img src="../images/AUSSPLogo.png" alt="AUSSP Logo" class="rounded-lg object-contain w-full" />
-  </div>
 </div>
-
-
-    <!-- Tools & Skills Section -->
-<h3 class="text-xl font-semibold mt-8 mb-4">Tools & Skills Used</h3>
+<!-- Image (1/4 width) -->
+<div class="w-full md:w-1/4 flex justify-center">
+<img alt="AUSSP Logo" class="rounded object-contain w-full" src="../images/AUSSPLogo.png"/>
+</div>
+</div>
+<!-- Tools & Skills Section -->
+<h3 class="pl-3 border-accent mt-8 border-l-2 font-semibold font-display mb-4 text-ink text-xl">Tools &amp; Skills Used</h3>
 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-  <!-- Tool 1 -->
-  <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow h-40 justify-between">
-    <img src="../images/AUSSP.webp" alt="3D Modeling" class="mx-auto mb-2 h-20 w-auto object-contain"/>
-    <span class="text-sm font-bold text-center">Solidworks</span>
-  </div>
-  <!-- Tool 2 -->
-  <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow h-40 justify-between">
-    <img src="../images/Code.webp" alt="Code" class="mx-auto mb-2 h-20 w-auto object-contain"/>
-    <span class="text-sm font-bold text-center">Coding</span>
-  </div>
-  <!-- Tool 3 -->
-  <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow h-40 justify-between">
-    <img src="../images/PIC.avif" alt="Sensor" class="mx-auto mb-2 h-20 w-auto object-contain"/>
-    <span class="text-sm font-bold text-center">Sensors</span>
-  </div>
-  <!-- Tool 4 -->
-  <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow h-40 justify-between">
-    <img src="../images/Teamwork.avif" alt="Teamwork" class="mx-auto mb-2 h-20 w-auto object-contain"/>
-    <span class="text-sm font-bold text-center">Teamwork</span>
-  </div>
+<!-- Tool 1 -->
+<div class="flex flex-col items-center tool-card p-4 rounded border border-[rgba(46,125,168,0.3)] h-40 justify-between">
+<img alt="3D Modeling" class="mx-auto mb-2 h-20 w-auto object-contain" src="../images/AUSSP.webp"/>
+<span class="text-sm font-bold text-center">Solidworks</span>
 </div>
-    <a href="../index.html#projects" class="text-blue-600 hover:underline">← Back to all projects</a>
-  </main>
-   
-<footer class="bg-gray-100 text-center p-4 text-sm text-gray-600">
-  © 2025 Ethan Ashley. All rights reserved. |
-   <a href="mailto:eta9303@gmail.com" class="text-blue-600 hover:underline">eta9303@gmail.com</a>
+<!-- Tool 2 -->
+<div class="flex flex-col items-center tool-card p-4 rounded border border-[rgba(46,125,168,0.3)] h-40 justify-between">
+<img alt="Code" class="mx-auto mb-2 h-20 w-auto object-contain" src="../images/Code.webp"/>
+<span class="text-sm font-bold text-center">Coding</span>
+</div>
+<!-- Tool 3 -->
+<div class="flex flex-col items-center tool-card p-4 rounded border border-[rgba(46,125,168,0.3)] h-40 justify-between">
+<img alt="Sensor" class="mx-auto mb-2 h-20 w-auto object-contain" src="../images/PIC.avif"/>
+<span class="text-sm font-bold text-center">Sensors</span>
+</div>
+<!-- Tool 4 -->
+<div class="flex flex-col items-center tool-card p-4 rounded border border-[rgba(46,125,168,0.3)] h-40 justify-between">
+<img alt="Teamwork" class="mx-auto mb-2 h-20 w-auto object-contain" src="../images/Teamwork.avif"/>
+<span class="text-sm font-bold text-center">Teamwork</span>
+</div>
+</div>
+<a class="back-link" href="/index.html#projects">← Back to all projects</a>
+</main>
+<footer class="title-block">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+<div class="title-block-grid">
+<div class="title-block-cell"><span class="tb-label">Drawn by</span><span class="tb-value">Ethan Ashley</span></div>
+<div class="title-block-cell"><span class="tb-label">Discipline</span><span class="tb-value">Mechanical Engineering</span></div>
+<div class="title-block-cell"><span class="tb-label">Sheet</span><span class="tb-value">X-02</span></div>
+<div class="title-block-cell"><span class="tb-label">Rev.</span><span class="tb-value">2026.01</span></div>
+</div>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mt-6 text-sm">
+<p style="color:rgba(234,244,250,0.6)">© 2025 Ethan Ashley. All rights reserved.</p>
+<div class="flex items-center gap-5">
+<a class="nav-link" href="mailto:eta9303@gmail.com" style="color:#eaf4fa">eta9303@gmail.com</a>
+<a class="nav-link" href="https://linkedin.com/in/ethan-ashley-wdeng" style="color:#eaf4fa">LinkedIn</a>
+</div>
+</div>
+</div>
 </footer>
+<button aria-label="Back to top" class="fixed bottom-6 right-6 hidden" id="backToTop">↑</button>
+<script>
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) backToTop.classList.remove('hidden');
+    else backToTop.classList.add('hidden');
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-   
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+  }
+</script>
 </body>
 </html>

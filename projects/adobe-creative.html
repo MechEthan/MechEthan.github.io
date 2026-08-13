@@ -1,78 +1,136 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adobe | Ethan Ashley</title>
-    <link rel="icon" href="/images/SmOut.png" type="image/png" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Adobe | Ethan Ashley</title>
+<link href="/images/SmOut.png" rel="icon" type="image/png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#16232E',
+            inkmuted: '#3E4C57',
+            paper: '#EEF1EC',
+            panel: '#E3E8E2',
+            navy: '#0E2A47',
+            navy2: '#123B61',
+            line: '#2E7DA8',
+            accent: '#D64526',
+            accentdark: '#B23A1F',
+            muted: '#5B6B75',
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+        }
       }
-    </style>
-  </head>
-  <body class="bg-white text-gray-800 flex flex-col min-h-screen">
-
-    <!-- Header -->
-    <header class="bg-gray-100 shadow p-4 sticky top-0 z-50">
-      <div class="w-full flex justify-between items-center px-2">
-        <a href="/index.html" class="text-2xl font-bold hover:text-blue-600">Ethan Ashley</a>
-        <nav class="space-x-6 text-sm">
-          <a href="/About.html" class="hover:text-blue-600">About</a>
-          <a href="/Projects.html" class="hover:text-blue-600">Projects</a>
-          <a href="/Resume.html" class="hover:text-blue-600">Resume</a>
-          <a href="/Contact.html" class="hover:text-blue-600">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="max-w-5xl mx-auto px-4 py-12 flex-grow space-y-12">
-      <!-- Adobe Creative Cloud Project Section -->
+    }
+  </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<link href="/images/SmOut.png" rel="icon" type="image/png"/>
+</head>
+<body class="text-ink flex flex-col min-h-screen">
+<!-- Header -->
+<header class="site-header sticky top-0 z-50">
+<div class="max-w-6xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 relative">
+<a class="brand-mark" href="/index.html">
+<svg fill="none" height="26" viewbox="0 0 26 26" width="26" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="13" r="10.5" stroke="#EAF4FA" stroke-width="1"></circle>
+<path d="M13 2.5V6.5M13 19.5V23.5M2.5 13H6.5M19.5 13H23.5" stroke="#D64526" stroke-width="1.4"></path>
+<circle cx="13" cy="13" r="2.6" stroke="#EAF4FA" stroke-width="1"></circle>
+</svg>
+<span class="brand-name">Ethan <span>Ashley</span></span>
+</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<svg fill="none" height="14" viewbox="0 0 18 14" width="18"><path d="M0 1H18M0 7H18M0 13H18" stroke="#EAF4FA" stroke-width="1.4"></path></svg>
+</button>
+<nav class="nav-links" id="navLinks">
+<a class="nav-link" href="/About.html">About</a>
+<a aria-current="page" class="nav-link" href="/Projects.html">Projects</a>
+<a class="nav-link" href="/Resume.html">Resume</a>
+<a class="nav-link" href="/Contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main class="space-y-12 flex-grow px-4 mx-auto py-12 max-w-5xl"><div class="mb-6 flex items-center gap-3"><span class="sheet-label">DWG P-02</span><a class="back-link" href="/Projects.html">← All projects</a></div>
+<!-- Adobe Creative Cloud Project Section -->
 <section class="max-w-6xl mx-auto px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-center">Adobe Creative Cloud Experience</h2>
-  <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+<h2 class="text-3xl sm:text-4xl mb-8 font-semibold font-display text-ink font-bold text-center">Adobe Creative Cloud Experience</h2>
+<p class="text-center text-muted mb-12 max-w-3xl mx-auto">
     I've recently begun exploring Adobe Creative Cloud applications as part of personal and academic projects. While my current skills are beginner level, I’ve enjoyed learning the fundamentals of Photoshop, Illustrator, and Premiere Pro — and I’m excited to continue improving.
   </p>
-
-  <div class="grid md:grid-cols-3 gap-8 text-center">
-    <!-- Photoshop -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Photoshop</h3>
-      <img src="../images/Photoshop.png" alt="Photoshop Example" class="w-full h-64 object-contain rounded shadow mb-2">
-      <p class="text-sm text-gray-600">
+<div class="grid md:grid-cols-3 gap-8 text-center">
+<!-- Photoshop -->
+<div>
+<h3 class="pl-3 border-accent border-l-2 mb-2 font-semibold font-display text-ink text-xl">Photoshop</h3>
+<img alt="Photoshop Example" class="w-full h-64 object-contain rounded border border-[rgba(46,125,168,0.3)] mb-2" src="../images/Photoshop.png"/>
+<p class="text-sm text-muted">
         Presentation and Techical documentation designing and improving.
       </p>
-    </div>
-
-    <!-- Illustrator -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Illustrator</h3>
-      <img src="../images/Illustrator.png" alt="Illustrator Example" class="w-full h-64 object-contain rounded shadow mb-2">
-      <p class="text-sm text-gray-600">
+</div>
+<!-- Illustrator -->
+<div>
+<h3 class="pl-3 border-accent border-l-2 mb-2 font-semibold font-display text-ink text-xl">Illustrator</h3>
+<img alt="Illustrator Example" class="w-full h-64 object-contain rounded border border-[rgba(46,125,168,0.3)] mb-2" src="../images/Illustrator.png"/>
+<p class="text-sm text-muted">
         Simple graphics and icon design. Working to build confidence with more complex tools.
       </p>
-    </div>
-
-    <!-- Premiere Pro -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Premiere Pro</h3>
-      <img src="../images/PPRo" alt="Premiere Pro Example" class="w-full h-64 object-contain rounded shadow mb-2">
-      <p class="text-sm text-gray-600">
+</div>
+<!-- Premiere Pro -->
+<div>
+<h3 class="pl-3 border-accent border-l-2 mb-2 font-semibold font-display text-ink text-xl">Premiere Pro</h3>
+<img alt="Premiere Pro Example" class="w-full h-64 object-contain rounded border border-[rgba(46,125,168,0.3)] mb-2" src="../images/PPRo.png"/>
+<p class="text-sm text-muted">
         I enjoy making videos for fun. Would be fun to apply to a job one day.
       </p>
-    </div>
-  </div>
+</div>
+</div>
 </section>
-<a href="../index.html#projects" class="text-blue-600 hover:underline">← Back to all projects</a>
-    </main>
+<a class="back-link" href="/index.html#projects">← Back to all projects</a>
+</main>
+<!-- Footer -->
+<footer class="title-block">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+<div class="title-block-grid">
+<div class="title-block-cell"><span class="tb-label">Drawn by</span><span class="tb-value">Ethan Ashley</span></div>
+<div class="title-block-cell"><span class="tb-label">Discipline</span><span class="tb-value">Mechanical Engineering</span></div>
+<div class="title-block-cell"><span class="tb-label">Sheet</span><span class="tb-value">P-02</span></div>
+<div class="title-block-cell"><span class="tb-label">Rev.</span><span class="tb-value">2026.01</span></div>
+</div>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mt-6 text-sm">
+<p style="color:rgba(234,244,250,0.6)">© 2025 Ethan Ashley. All rights reserved.</p>
+<div class="flex items-center gap-5">
+<a class="nav-link" href="mailto:eta9303@gmail.com" style="color:#eaf4fa">eta9303@gmail.com</a>
+<a class="nav-link" href="https://linkedin.com/in/ethan-ashley-wdeng" style="color:#eaf4fa">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" class="fixed bottom-6 right-6 hidden" id="backToTop">↑</button>
+<script>
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) backToTop.classList.remove('hidden');
+    else backToTop.classList.add('hidden');
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 p-4 text-center text-sm text-gray-600 mt-auto">
-      © 2025 Ethan Ashley | <a href="mailto:ethanashley@email.com" class="hover:text-blue-600">ethanashley@email.com</a>
-    </footer>
-
-  </body>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+  }
+</script>
+</body>
 </html>

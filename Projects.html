@@ -1,172 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ethan Ashley | Mechanical Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
-    <link rel="icon" href="/images/SmOut.png" type="image/png" />
-
-  </head>
-  <body class="bg-white text-gray-800 min-h-screen flex flex-col">
-    <header class="bg-gray-100 shadow p-4 sticky top-0 z-50">
-  <div class="w-full flex justify-between items-center px-2">
-    <h1 class="text-2xl font-bold">
-      <a href="index.html" class="hover:text-blue-600">Ethan Ashley</a>
-    </h1>
-    <nav class="space-x-6 text-sm">
-      <a href="About.html" class="hover:text-blue-600">About</a>
-      <a href="Projects.html" class="hover:text-blue-600">Projects</a>
-      <a href="Resume.html" class="hover:text-blue-600">Resume</a>
-      <a href="Contact.html" class="hover:text-blue-600">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="flex-grow">
-
-<!-- Projects Section -->
-<section id="projects" class="w-full bg-gray-50 py-16 px-2">
-  <div class="w-full space-y-16">
-
-    <!-- Course Projects -->
-    <div>
-      <h3 class="text-2xl font-bold mb-8 text-center">Course Projects</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <a href="projects/additive-manufacturing.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Additive Manufacturing and Design</h4>
-          <p class="text-sm text-gray-500 mb-2">Senior Design Project</p>
-          <p class="text-gray-700 mb-2">Worked with Auburn's National Center for Additive Manufacturing Excellence.</p>
-        </a>
-        <a href="projects/optimization-adams.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Optimization with Adams View</h4>
-          <p class="text-sm text-gray-500 mb-2">Virtual Prototyping</p>
-          <p class="text-gray-700 mb-2">Optimized the design of a latch used for the Apollo program</p>
-        </a>
-        <a href="projects/orrery.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Orrery</h4>
-          <p class="text-sm text-gray-500 mb-2">Machine Design</p>
-          <p class="text-gray-700 mb-2">Designed and fabricated an orrery with rotational constraints.</p>
-        </a>
-        <a href="projects/indycar-pid.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Autonomous Indy Car Steering Control</h4>
-          <p class="text-sm text-gray-500 mb-2">System and Dynamics and Controls</p>
-          <p class="text-gray-700 mb-2">Coded a PID controller to navigate an autonomous race car around Indianapolis Motor Speedway.</p>
-        </a>
-        <a href="projects/stair-rover.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Stair Climbing Rover</h4>
-          <p class="text-sm text-gray-500 mb-2">Computer Aided Design</p>
-          <p class="text-gray-700 mb-2">Designed and built a rover capable of climbing stairs.</p>
-        </a>
-        <a href="projects/renewable-town.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Renewable Town</h4>
-          <p class="text-sm text-gray-500 mb-2">Renewable Resources and Applications</p>
-          <p class="text-gray-700 mb-2">Designed a renewable energy system capable of making a neighborhood self sufficient.</p>
-        </a>
-        <a href="projects/mechatronics.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Mechatronics Project</h4>
-          <p class="text-sm text-gray-500 mb-2">Mechatronics</p>
-          <p class="text-gray-700 mb-2">Coded a stepper motor, keypad, and LCD Display to interact as desired.</p>
-        </a>
-        <a href="projects/ball-machine.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Ball Machine</h4>
-          <p class="text-sm text-gray-500 mb-2">Concepts of Mechanical Design</p>
-          <p class="text-gray-700 mb-2">Modeled and built a ball machine with certain constraints.</p>
-        </a>
-        <a href="projects/plate-stub.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Plate and Stub</h4>
-          <p class="text-sm text-gray-500 mb-2">Manufacturing Technology</p>
-          <p class="text-gray-700 mb-2">Introductory project for manual mills and lathes.</p>
-        </a>
-        <a href="projects/labs.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block col-span-full md:col-span-1 md:col-start-2">
-          <h4 class="font-semibold text-lg mb-1">Additional Labs</h4>
-          <p class="text-sm text-gray-500 mb-2">Labs</p>
-          <p class="text-gray-700 mb-2">Additional project and technical experience.</p>
-        </a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethan Ashley | Mechanical Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {{
+      theme: {{
+        extend: {{
+          colors: {{
+            ink: '#16232E',
+            inkmuted: '#3E4C57',
+            paper: '#EEF1EC',
+            panel: '#E3E8E2',
+            navy: '#0E2A47',
+            navy2: '#123B61',
+            line: '#2E7DA8',
+            accent: '#D64526',
+            accentdark: '#B23A1F',
+            muted: '#5B6B75',
+          }},
+          fontFamily: {{
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }},
+        }}
+      }}
+    }}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="icon" href="/images/SmOut.png" type="image/png" />
+</head>
+<body class="text-ink min-h-screen flex flex-col">
+  <header class="site-header sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 relative">
+      <a href="/index.html" class="brand-mark">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="13" cy="13" r="10.5" stroke="#EAF4FA" stroke-width="1"/>
+          <path d="M13 2.5V6.5M13 19.5V23.5M2.5 13H6.5M19.5 13H23.5" stroke="#D64526" stroke-width="1.4"/>
+          <circle cx="13" cy="13" r="2.6" stroke="#EAF4FA" stroke-width="1"/>
+        </svg>
+        <span class="brand-name">Ethan <span>Ashley</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1H18M0 7H18M0 13H18" stroke="#EAF4FA" stroke-width="1.4"/></svg>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="/About.html" class="nav-link">About</a>
+        <a href="/Projects.html" class="nav-link" aria-current="page">Projects</a>
+        <a href="/Resume.html" class="nav-link">Resume</a>
+        <a href="/Contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-grow w-full px-4 sm:px-6 py-14 sm:py-20">
+    <div class="max-w-6xl mx-auto mb-14">
+      <span class="sheet-label">DWG 02 &mdash; PROJECTS</span>
+      <h1 class="font-display font-semibold text-3xl sm:text-4xl text-ink mt-4 mb-3">Projects</h1>
+      <p class="text-inkmuted max-w-2xl">
+        A catalog of coursework, extracurricular work, and personal projects &mdash; each one drawn up with its goals,
+        tools, and outcome.
+      </p>
     </div>
 
-    <!-- Extracurricular Projects -->
-    <div>
-      <h3 class="text-2xl font-bold mb-8 text-center">Extracurricular Projects</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <a href="projects/rocketry.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Rocketry Payload Team</h4>
-          <p class="text-sm text-gray-500 mb-2">AURA</p>
-          <p class="text-gray-700 mb-2">CAD modeling and technical writing for AURA.</p>
-        </a>
-        <a href="projects/aussp.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Training Program</h4>
-          <p class="text-sm text-gray-500 mb-2">AUSSP</p>
-          <p class="text-gray-700 mb-2">Completed the training program for AUSSP.</p>
-        </a>
-        <a href="projects/aumb-light-system.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">AUMB Light System</h4>
-          <p class="text-sm text-gray-500 mb-2">AUMB</p>
-          <p class="text-gray-700 mb-2">Team lead for device management for the AUMB's light shows.</p>
-        </a>
+    <div class="max-w-6xl mx-auto space-y-16">
+
+      <div>
+        <p class="section-eyebrow justify-center w-full">Coursework</p>
+        <h3 class="font-display font-semibold text-2xl text-ink mb-8 text-center">Course Projects</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="projects/additive-manufacturing.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-01</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Additive Manufacturing and Design</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Senior Design Project</p>
+            <p class="text-inkmuted text-sm">Worked with Auburn's National Center for Additive Manufacturing Excellence.</p>
+          </a>
+          <a href="projects/optimization-adams.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-02</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Optimization with Adams View</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Virtual Prototyping</p>
+            <p class="text-inkmuted text-sm">Optimized the design of a latch used for the Apollo program.</p>
+          </a>
+          <a href="projects/orrery.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-03</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Orrery Machine Design</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Machine Design</p>
+            <p class="text-inkmuted text-sm">Designed and fabricated an orrery with rotational constraints.</p>
+          </a>
+          <a href="projects/indycar-pid.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-04</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Autonomous Indy Car Steering Control</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Systems, Dynamics &amp; Controls</p>
+            <p class="text-inkmuted text-sm">Coded a PID controller to navigate an autonomous race car around Indianapolis Motor Speedway.</p>
+          </a>
+          <a href="projects/stair-rover.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-05</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Stair Climbing Rover</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Computer Aided Design</p>
+            <p class="text-inkmuted text-sm">Designed and built a rover capable of climbing stairs.</p>
+          </a>
+          <a href="projects/renewable-town.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-06</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Renewable Town</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Renewable Resources &amp; Applications</p>
+            <p class="text-inkmuted text-sm">Designed a renewable energy system capable of making a neighborhood self-sufficient.</p>
+          </a>
+          <a href="projects/mechatronics.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-07</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Mechatronics Project</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Mechatronics</p>
+            <p class="text-inkmuted text-sm">Coded a stepper motor, keypad, and LCD display to interact as desired.</p>
+          </a>
+          <a href="projects/ball-machine.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-08</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Ball Machine</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Concepts of Mechanical Design</p>
+            <p class="text-inkmuted text-sm">Modeled and built a ball machine with certain constraints.</p>
+          </a>
+          <a href="projects/plate-stub.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG C-09</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Plate and Stub</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Manufacturing Technology</p>
+            <p class="text-inkmuted text-sm">Introductory project for manual mills and lathes.</p>
+          </a>
+          <a href="projects/labs.html" class="card-blueprint block p-5 md:col-start-2">
+            <span class="card-index">DWG C-10</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Additional Labs</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Labs</p>
+            <p class="text-inkmuted text-sm">Additional project and technical experience.</p>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="section-eyebrow justify-center w-full">Outside the Classroom</p>
+        <h3 class="font-display font-semibold text-2xl text-ink mb-8 text-center">Extracurricular Projects</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="projects/rocketry.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG X-01</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Rocketry Payload Team</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">AURA</p>
+            <p class="text-inkmuted text-sm">CAD modeling and technical writing for AURA.</p>
+          </a>
+          <a href="projects/aussp.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG X-02</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Training Program</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">AUSSP</p>
+            <p class="text-inkmuted text-sm">Completed the training program for AUSSP.</p>
+          </a>
+          <a href="projects/aumb-light-system.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG X-03</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">AUMB Light System</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">AUMB</p>
+            <p class="text-inkmuted text-sm">Team lead for device management for the AUMB's light shows.</p>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="section-eyebrow justify-center w-full">On My Own Time</p>
+        <h3 class="font-display font-semibold text-2xl text-ink mb-8 text-center">Personal Projects</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="projects/blender-modeling.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG P-01</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Blender 3D Modeling</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Blender</p>
+            <p class="text-inkmuted text-sm">Learning more 3D modeling software.</p>
+          </a>
+          <a href="projects/adobe-creative.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG P-02</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">Adobe Creative Cloud</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">Illustrator / Photoshop / Premiere Pro</p>
+            <p class="text-inkmuted text-sm">Learning to improve visuals with editing software.</p>
+          </a>
+          <a href="projects/e-portfolio.html" class="card-blueprint block p-5">
+            <span class="card-index">DWG P-03</span>
+            <h4 class="font-display font-semibold text-lg mt-2 mb-1 text-ink">E-Portfolio</h4>
+            <p class="text-xs font-mono uppercase tracking-wide text-muted mb-2">GitHub</p>
+            <p class="text-inkmuted text-sm">Used to program this site.</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="title-block">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+      <div class="title-block-grid">
+        <div class="title-block-cell"><span class="tb-label">Drawn by</span><span class="tb-value">Ethan Ashley</span></div>
+        <div class="title-block-cell"><span class="tb-label">Discipline</span><span class="tb-value">Mechanical Engineering</span></div>
+        <div class="title-block-cell"><span class="tb-label">Sheet</span><span class="tb-value">02 &mdash; Projects</span></div>
+        <div class="title-block-cell"><span class="tb-label">Rev.</span><span class="tb-value">2026.01</span></div>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mt-6 text-sm">
+        <p style="color:rgba(234,244,250,0.6)">© 2025 Ethan Ashley. All rights reserved.</p>
+        <div class="flex items-center gap-5">
+          <a href="mailto:eta9303@gmail.com" class="nav-link" style="color:#eaf4fa">eta9303@gmail.com</a>
+          <a href="https://linkedin.com/in/ethan-ashley-wdeng" class="nav-link" style="color:#eaf4fa">LinkedIn</a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Personal Projects -->
-    <div>
-      <h3 class="text-2xl font-bold mb-8 text-center">Personal Projects</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <a href="projects/blender-modeling.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Blender 3D Modeling</h4>
-          <p class="text-sm text-gray-500 mb-2">Side Project</p>
-          <p class="text-gray-700 mb-2">Developed a compact weather station using sensors and Arduino microcontroller.</p>
-        </a>
-        <a href="projects/adobe-creative.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">Adobe Creative Cloud</h4>
-          <p class="text-sm text-gray-500 mb-2">Control Systems</p>
-          <p class="text-gray-700 mb-2">Used MATLAB to simulate control systems and model system dynamics.</p>
-        </a>
-        <a href="projects/e-portfolio.html" class="bg-white rounded-2xl shadow p-4 hover:shadow-xl transition duration-300 block">
-          <h4 class="font-semibold text-lg mb-1">E-portfolio</h4>
-          <p class="text-sm text-gray-500 mb-2">Aerodynamics</p>
-          <p class="text-gray-700 mb-2">Analyzed data collected from wind tunnel tests to evaluate drag coefficients.</p>
-        </a>
-      </div>
-    </div>
+  <button id="backToTop" class="fixed bottom-6 right-6 hidden" aria-label="Back to top">↑</button>
 
-  </div>
-</section>
-    
-    
-</main>
-    <!-- Footer -->
-    <footer class="bg-gray-100 text-center p-4 text-sm text-gray-600">
-  © 2025 Ethan Ashley. All rights reserved. |
-  <a href="mailto:eta9303@gmail.com" class="text-blue-600 hover:underline">eta9303@gmail.com</a>
-</footer>
+  <script>
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) backToTop.classList.remove('hidden');
+      else backToTop.classList.add('hidden');
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white px-3 py-2 rounded-full shadow-lg hidden">↑ Top</button>
-
-    <script>
-      // Show button on scroll
-      const backToTop = document.getElementById('backToTop');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          backToTop.classList.remove('hidden');
-        } else {
-          backToTop.classList.add('hidden');
-        }
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
       });
+    }
+  </script>
 
-      // Scroll to top on click
-      backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    </script>
-  </body>
+</body>
 </html>
