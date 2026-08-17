@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GKN Aerospace | Ethan Ashley</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#16232E',
+            inkmuted: '#3E4C57',
+            paper: '#EEF1EC',
+            panel: '#E3E8E2',
+            navy: '#0E2A47',
+            navy2: '#123B61',
+            line: '#2E7DA8',
+            accent: '#D64526',
+            accentdark: '#B23A1F',
+            muted: '#5B6B75',
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+        }
+      }
+    }
+  </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<link href="/images/SmOut.png" rel="icon" type="image/png"/>
+</head>
+<body class="text-ink min-h-screen flex flex-col">
+<!-- Header -->
+<header class="site-header sticky top-0 z-50">
+<div class="max-w-6xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 relative">
+<a class="brand-mark" href="/index.html">
+<svg fill="none" height="26" viewbox="0 0 26 26" width="26" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="13" r="10.5" stroke="#EAF4FA" stroke-width="1"></circle>
+<path d="M13 2.5V6.5M13 19.5V23.5M2.5 13H6.5M19.5 13H23.5" stroke="#D64526" stroke-width="1.4"></path>
+<circle cx="13" cy="13" r="2.6" stroke="#EAF4FA" stroke-width="1"></circle>
+</svg>
+<span class="brand-name">Ethan <span>Ashley</span></span>
+</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<svg fill="none" height="14" viewbox="0 0 18 14" width="18"><path d="M0 1H18M0 7H18M0 13H18" stroke="#EAF4FA" stroke-width="1.4"></path></svg>
+</button>
+<nav class="nav-links" id="navLinks">
+<a class="nav-link" href="/About.html">About</a>
+<a class="nav-link" href="/Projects.html">Projects</a>
+<a class="nav-link" href="/Resume.html">Resume</a>
+<a class="nav-link" href="/Contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<main class="flex-grow w-full">
+
+  <!-- Experience hero -->
+  <section class="hero-blueprint px-4 sm:px-6 py-14 sm:py-20">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-6 flex items-center gap-3">
+        <span class="sheet-label" style="border-color:rgba(234,244,250,0.4); color:#eaf4fa">DWG E-01</span>
+        <a class="back-link" href="/index.html" style="color:rgba(234,244,250,0.75)">← Back home</a>
+      </div>
+      <p class="section-eyebrow" style="color:#eaf4fa">Engineering Experience</p>
+      <h1 class="font-display font-semibold text-4xl sm:text-5xl" style="color:#f4f7f5">GKN Aerospace</h1>
+      <p class="mt-3 font-mono text-sm tracking-wide" style="color:rgba(234,244,250,0.8)">
+        LEAN ENGINEERING INTERN · SUMMER 2025 · TALLASSEE, ALABAMA
+      </p>
+      <p class="mt-6 max-w-2xl leading-relaxed" style="color:rgba(234,244,250,0.9)">
+        Supported aerospace manufacturing and quality improvement initiatives involving composite components,
+        process improvement, and production problem solving &mdash; applying Lean, Six Sigma, Root Cause
+        Corrective Action (RCCA), Material Review Board (MRB), and GD&amp;T concepts in a live production
+        environment.
+      </p>
+
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-2 gap-6 max-w-lg">
+        <div>
+          <p class="font-display font-semibold text-4xl" style="color:#f4f7f5">~360</p>
+          <p class="text-sm mt-1" style="color:rgba(234,244,250,0.75)">previously scrapped parts supported for recovery</p>
+        </div>
+        <div>
+          <p class="font-display font-semibold text-4xl" style="color:#f4f7f5">~$2.5M</p>
+          <p class="text-sm mt-1" style="color:rgba(234,244,250,0.75)">approximate material value represented by recovered parts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="px-4 pt-14">
+    <div class="dim-divider"><span class="dim-line"></span><span class="dim-label">Role Overview</span><span class="dim-line"></span></div>
+  </div>
+
+  <!-- Role overview -->
+  <section class="px-4 sm:px-6 py-10 sm:py-14 max-w-4xl mx-auto">
+    <!-- ============================================================
+         PLACEHOLDER — expand with 1-2 more paragraphs of detail:
+         what the internship group/team did, what a typical week
+         looked like, and what part of production you supported.
+         ============================================================ -->
+    <p class="text-inkmuted leading-relaxed">
+      As a Lean Engineering Intern, I worked within GKN Aerospace's manufacturing and quality organization,
+      supporting efforts to reduce scrap and recover value from previously non-conforming composite parts.
+      This meant working directly on the production floor with engineers, quality inspectors, and technicians
+      to investigate root causes, evaluate parts against engineering drawings and GD&amp;T requirements, and
+      route recoverable material through the Material Review Board (MRB) process.
+    </p>
+    <p class="text-inkmuted leading-relaxed mt-4">
+      [Add more detail here — e.g. specific systems or software you used to track dispositions, how you
+      collaborated with cross-functional teams, or a specific problem you helped solve.]
+    </p>
+  </section>
+
+  <div class="px-4">
+    <div class="dim-divider"><span class="dim-line"></span><span class="dim-label">Key Contributions</span><span class="dim-line"></span></div>
+  </div>
+
+  <!-- Key contributions -->
+  <section class="px-4 sm:px-6 py-10 sm:py-14 max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card-blueprint p-6">
+        <span class="card-index">RCCA</span>
+        <h3 class="font-display font-semibold text-lg mt-2 mb-2 text-ink">Root Cause Corrective Action</h3>
+        <p class="text-inkmuted text-sm">
+          [Describe a specific RCCA you contributed to — the defect investigated, root cause found, and
+          corrective action implemented.]
+        </p>
+      </div>
+      <div class="card-blueprint p-6">
+        <span class="card-index">MRB</span>
+        <h3 class="font-display font-semibold text-lg mt-2 mb-2 text-ink">Material Review Board</h3>
+        <p class="text-inkmuted text-sm">
+          [Describe your role in the MRB process — evaluating nonconforming parts, documenting dispositions,
+          and supporting recovery decisions.]
+        </p>
+      </div>
+      <div class="card-blueprint p-6">
+        <span class="card-index">GD&amp;T</span>
+        <h3 class="font-display font-semibold text-lg mt-2 mb-2 text-ink">Drawing &amp; Tolerance Review</h3>
+        <p class="text-inkmuted text-sm">
+          [Describe how you used GD&amp;T to evaluate parts against engineering drawings and specifications.]
+        </p>
+      </div>
+      <div class="card-blueprint p-6">
+        <span class="card-index">LEAN</span>
+        <h3 class="font-display font-semibold text-lg mt-2 mb-2 text-ink">Process Improvement</h3>
+        <p class="text-inkmuted text-sm">
+          [Describe a Lean or Six Sigma initiative you supported &mdash; what process was improved and how.]
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PLACEHOLDER — photo/graphic section. Add 1-3 images once you
+       have shareable ones (facility exterior, a process diagram you
+       made, a chart of results, a team photo, etc). Delete this
+       whole <section> if you'd rather not include images.
+       ============================================================ -->
+  <section class="px-4 sm:px-6 py-6 max-w-5xl mx-auto">
+    <div class="card-blueprint p-8 text-center border-dashed">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted">[Optional: add a photo, chart, or process diagram here]</p>
+    </div>
+  </section>
+
+  <div class="px-4">
+    <div class="dim-divider"><span class="dim-line"></span><span class="dim-label">Methods &amp; Skills</span><span class="dim-line"></span></div>
+  </div>
+
+  <!-- Methods & skills pills -->
+  <section class="px-4 sm:px-6 py-10 sm:py-16 max-w-4xl mx-auto text-center">
+    <div class="flex flex-wrap justify-center gap-3">
+      <span class="sheet-label">Lean Manufacturing</span>
+      <span class="sheet-label">Six Sigma</span>
+      <span class="sheet-label">Root Cause Analysis</span>
+      <span class="sheet-label">Material Review Board</span>
+      <span class="sheet-label">GD&amp;T</span>
+      <span class="sheet-label">Composite Components</span>
+      <span class="sheet-label">Production Problem Solving</span>
+      <span class="sheet-label">Quality Engineering</span>
+    </div>
+  </section>
+
+  <div class="px-4 pb-4">
+    <a href="/index.html#projects" class="back-link block text-center">← Back to Projects</a>
+  </div>
+
+</main>
+
+<footer class="title-block">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+<div class="title-block-grid">
+<div class="title-block-cell"><span class="tb-label">Drawn by</span><span class="tb-value">Ethan Ashley</span></div>
+<div class="title-block-cell"><span class="tb-label">Discipline</span><span class="tb-value">Mechanical Engineering</span></div>
+<div class="title-block-cell"><span class="tb-label">Sheet</span><span class="tb-value">E-01</span></div>
+<div class="title-block-cell"><span class="tb-label">Rev.</span><span class="tb-value">2026.01</span></div>
+</div>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mt-6 text-sm">
+<p style="color:rgba(234,244,250,0.6)">© 2025 Ethan Ashley. All rights reserved.</p>
+<div class="flex items-center gap-5">
+<a class="nav-link" href="mailto:eta9303@gmail.com" style="color:#eaf4fa">eta9303@gmail.com</a>
+<a class="nav-link" href="https://linkedin.com/in/ethan-ashley-wdeng" style="color:#eaf4fa">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" class="fixed bottom-6 right-6 hidden" id="backToTop">↑</button>
+<script>
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) backToTop.classList.remove('hidden');
+    else backToTop.classList.add('hidden');
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+  }
+</script>
+</body>
+</html>
